@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container mt-5">
+
+        <h1 class="my-5 text-info text-lg-center shadow-lg"> SMR Saimon Khan </h1>
+        <div class="row mt-5 d-flex
+        justify-content-center">
+            <h1 class="text-center">US Dollar To BDT </h1>
+            <div class="col-lg-4 col-md-5 col-sm-8  mt-5 shadow ">
+
+                <div class="mb-3">
+                    <label for="Input1">  USD:  </label>
+                    <input type="text/number" class="form-control" id="Input1" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                </div>
+
+
+                <div>
+                    <label for="">  BDT:  </label>
+                    <input type="text/number" class="form-control" id="Input2" aria-label="Input group example" aria-describedby="btnGroupAddon">
+
+
+                </div>
+
+                <div class="mt-4 text-center pb-3">
+                    <input tton type="button" class="btn btn-outline-primary " style="width:48%" onClick="Calculation()" value="Convert" />
+                    <input type="button" class="btn btn-outline-danger " style="width:48%" value="Clear" onclick="ClearConverter()" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mt-5 d-flex
+        justify-content-center">
+            <h1 class="text-center">Simple Calculator </h1>
+            <div class="col-lg-4 col-md-5 col-sm-8  my-5 shadow ">
+                <form id="form1" runat="server">
+                    <div class="mb-2 text-center">
+
+
+                        <label> FirstNumber :</label><br />
+                        <input class="form-control" id="txtFirst" type="text" /><br />
+                        <label> Second Number :</label><br />
+                        <input class="form-control" id="txtSecond" type="text" /><br />
+
+                    </div>
+                    <div class="text-center mb-3 ">
+                        <label id="txtResult" style="font-size: 24px; color: gray;"></label><br />
+                    </div>
+                    <div class="text-center mb-3 pb-3">
+                        <input class="btn btn-outline-danger  " id="btnAdd" type="button" value="ADD" onclick="Add()" />
+                        <input class="btn btn-outline-warning  " id="btnSub" type="button" value="SUB" onclick="Sub()" />
+                        <input class="btn btn-outline-success " id="btnMul" type="button" value="MUL" onclick="Mul()" />
+                        <input class="btn btn-outline-primary " id="btnDiv" type="button" value="DIV" onclick="Div()" />
+                        <input class="btn btn-outline-danger " id="btnClear" type="button" value="Clear" onclick="Clear()" />
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--  Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+    <script src="prectice.js"></script>
+</body>
+
+</html>
