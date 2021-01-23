@@ -10,37 +10,49 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 
     <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(214, 214, 214);
+        }
+        
+        .custom-container {
+            border-radius: 10px;
+            background: rgb(214, 214, 214);
+            box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <div class="container mt-5">
+    <div class="container mt-5 ">
 
         <h1 class="mt-5 text-info text-center shadow-lg"> SMR Saimon Khan </h1>
         <img class=" d-block mx-auto" src="logo.png" alt="" style="width: 200px ;height: 100px ;">
         <hr class="">
         <div class="row mt-5 d-flex
         justify-content-center">
-            <h1 class="text-center">US Dollar To BDT </h1>
-            <div class="col-lg-4 col-md-5 col-sm-8  mt-5 shadow ">
+            <h1 class="text-center" style="color: rgb(255, 255, 255); font-weight: 800 ;">US Dollar To BDT </h1>
+            <div class="col-lg-4 col-md-5 col-sm-8  mt-5 custom-container ">
 
                 <div class="mb-3">
-                    <label for="Input1">  USD:  </label>
+                    <label for="Input1" style="color: rgb(255, 255, 255); font-size:18px; font-weight: 800 ;">  USD:  </label>
                     <input type="text/number" class="form-control" id="Input1" aria-label="Input group example" aria-describedby="btnGroupAddon">
                 </div>
 
 
                 <div>
-                    <label for="">  BDT:  </label>
+                    <label for="" style="color: rgb(255, 255, 255); font-size:18px; font-weight: 800 ;">  BDT:  </label>
                     <input type="text/number" class="form-control" id="Input2" aria-label="Input group example" aria-describedby="btnGroupAddon">
 
 
                 </div>
 
                 <div class="mt-4 text-center pb-3">
-                    <input tton type="button" class="btn btn-outline-primary " style="width:48%" onClick="Calculation()" value="Convert" />
-                    <input type="button" class="btn btn-outline-danger " style="width:48%" value="Clear" onclick="ClearConverter()" />
+                    <input type="button" class="btn btn-outline-primary " style="width:48%; color: rgb(255, 255, 255); font-size:18px; font-weight: 600 ;" onClick="Calculation()" value="Convert" />
+                    <input type="button" class="btn btn-outline-danger " style="width:48%; color: rgb(255, 255, 255); font-size:18px; font-weight: 600 ;" value="Clear" onclick="ClearConverter()" />
 
                 </div>
             </div>
@@ -50,27 +62,27 @@
     <div class="container mt-5">
         <div class="row mt-5 d-flex
         justify-content-center">
-            <h1 class="text-center">Simple Calculator </h1>
-            <div class="col-lg-4 col-md-5 col-sm-8  my-5 shadow ">
+            <h1 class="text-center" style="color: rgb(255, 255, 255);font-weight: 800 ;">Simple Calculator </h1>
+            <div class="col-lg-4 col-md-5 col-sm-8  my-5  custom-container ">
                 <form id="form1" runat="server">
                     <div class="mb-2 text-center">
 
 
-                        <label> FirstNumber :</label><br />
+                        <label style="color: rgb(255, 255, 255); font-size:18px; font-weight: 800 ;"> First  Number :</label><br />
                         <input class="form-control" id="txtFirst" type="text" /><br />
-                        <label> Second Number :</label><br />
+                        <label style="color: rgb(255, 255, 255); font-size:18px; font-weight: 800 ;"> Second Number :</label><br />
                         <input class="form-control" id="txtSecond" type="text" /><br />
 
                     </div>
                     <div class="text-center mb-3 ">
-                        <label id="txtResult" style="font-size: 24px; color: gray;"></label><br />
+                        <label id="txtResult" style="font-size: 24px; color: rgb(255, 255, 255);"></label><br />
                     </div>
                     <div class="text-center mb-3 pb-3">
-                        <input class="btn btn-outline-danger  " id="btnAdd" type="button" value="ADD" onclick="Add()" />
-                        <input class="btn btn-outline-warning  " id="btnSub" type="button" value="SUB" onclick="Sub()" />
-                        <input class="btn btn-outline-success " id="btnMul" type="button" value="MUL" onclick="Mul()" />
-                        <input class="btn btn-outline-primary " id="btnDiv" type="button" value="DIV" onclick="Div()" />
-                        <input class="btn btn-outline-danger " id="btnClear" type="button" value="Clear" onclick="Clear()" />
+                        <input class="btn btn-outline-primary  " id="btnAdd" type="button" value="ADD" onclick="Add()" style="color: rgb(255, 255, 255); font-size:18px; font-weight: 600 ;" />
+                        <input class="btn btn-outline-dark  " id="btnSub" type="button" value="SUB" onclick="Sub()" style="color: rgb(255, 255, 255); font-size:18px; font-weight: 600 ;" />
+                        <input class="btn btn-outline-success " id="btnMul" type="button" value="MUL" onclick="Mul()" style="color: rgb(255, 255, 255); font-size:18px; font-weight: 600 ;" />
+                        <input class="btn btn-outline-primary " id="btnDiv" type="button" value="DIV" onclick="Div()" style="color: rgb(255, 255, 255); font-size:18px; font-weight: 600 ;" />
+                        <input class="btn btn-outline-danger " id="btnClear" type="button" value="Clear" onclick="Clear()" style="color: rgb(255, 255, 255); font-size:18px; font-weight: 600 ;" />
 
                     </div>
                 </form>
